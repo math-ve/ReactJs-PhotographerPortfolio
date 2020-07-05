@@ -42,6 +42,7 @@ const AlbumView = (props) => {
                 </div>
             </div>
             <div className="album-view-full-container">
+                <p>Chargement...</p>
                 <img src={`/assets/${currentFullView}`} alt="currentfullview" className="album-current-full-view" id="current-full-view"/>                    
             </div>
         </div>
