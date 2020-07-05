@@ -202,3 +202,10 @@ BIG IMG PREVIEW || RIGHT PART
     position: relative;
     z-index: 5;
 }
+
+
+@media screen and (max-width:1440px) {
+    .album-view-img-container {
+        height: 145px;
+    }
+}
