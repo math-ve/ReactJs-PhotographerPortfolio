@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid yellow;
 }
 
 .header-nav-container {

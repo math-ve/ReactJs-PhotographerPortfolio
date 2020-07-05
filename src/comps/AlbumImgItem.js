@@ -3,7 +3,7 @@ import gsap from 'gsap';
 
 const AlbumImgItem = (props) => {
 
-    const { picture, index, handleFullView } = props;
+    const { picture, index, handleFullView, albumTitle } = props;
 
     const handleHoverEnter = () => {
         gsap.to(`.album-view-img-hover-${index}`,.35, {transform:"translateX(0%)"})
@@ -15,7 +15,7 @@ const AlbumImgItem = (props) => {
 
 
     return (
-        <div className="album-view-img-container" onClick={() => handleFullView(index)} onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave}>
+        <div className={`album-view-img-container album-view-img-container-${index} album-view-img-container-${index}-${albumTitle}`} onClick={() => handleFullView(index)} onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave}>
             <div className={`album-view-img-hover album-view-img-hover-${index}`}>
                 <img src="/assets/icon/search.png" alt="search-icon" className="search-icon" />
             </div>
