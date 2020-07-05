@@ -8,7 +8,11 @@ const Acceuil = () => {
     const [tl1] = useState(gsap.timeline(/*{paused:true}*/));
 
     const handleClick = () => {
-        setRedirect(true);
+        gsap.to('.app-tr-1 li', .5, {scaleY:1,stagger:.1, onComplete:() => {
+            setRedirect(true);
+            gsap.to('.app-tr-1 li', .5, {scaleY:0, stagger:.1});
+            setRedirect(false);
+        }});
     }
 
     useEffect(() => {
@@ -18,7 +22,7 @@ const Acceuil = () => {
         .from('.acceuil-tr-left, .acceuil-tr-right', .5, {scaleY:0})
         .from('.acceuil-button-container', 1.5, {opacity:0})
         
-    })
+    },[])
 
 
     if(redirect)

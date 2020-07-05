@@ -1,24 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import api from '../api/api';
 import AlbumItem from '../comps/AlbumItem';
 
 import gsap from 'gsap';
 import AlbumView from '../comps/AlbumView';
 
-const Albums = () => {
+const Albums = (props) => {
 
     const [allAlbums, setAllAlbums] = useState([]);
     const [tl1] = useState(gsap.timeline({paused:true}));
     const [currentAlbum, setCurrentAlbum] = useState({data:{title:"", pictures:[], small:[]}});
 
-    //API FETCH
     useEffect(() => {
-        const fetchData = async () => {
-            const result = await api.readAll();
-            setAllAlbums(result);
-        }
-        fetchData();
-    },[]);
+        setAllAlbums(props.dataAlbums);
+    });
 
     //TL1 DEF
     useEffect(() => {
@@ -27,6 +21,10 @@ const Albums = () => {
         .from('.album-view-full-container', .5, {xPercent:100}, "-=.5")
         .to('.album-view-list-container', 0, {pointerEvents:"all"})
     },[])
+
+    useEffect(() => {
+        gsap.from('.album-item', 1, {opacity:0, y:100, stagger:.35, ease:"back"})
+    },[allAlbums])
 
     const handlePreview = (albumTitle) => {
         tl1.play();

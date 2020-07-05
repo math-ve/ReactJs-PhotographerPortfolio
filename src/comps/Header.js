@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Redirect, Link, NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import gsap from 'gsap';
 
 const Header = () => {
@@ -15,8 +15,6 @@ const Header = () => {
             gsap.to('.app-tr-1 li', .5, {scaleY:0, stagger:.1});
             setRedirect(false);
         }});
-
-        
     }
 
     if(redirect)

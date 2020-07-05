@@ -91,10 +91,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: black;
+}
+
+.acceuil-button:hover {
+    background-color: black;
+    border-radius: 15px;
+    transform: scale(1.05);
+    color: yellow;
 }
 
 .acceuil-button p {
-    color: black;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 1vw;
     font-weight: 400;
