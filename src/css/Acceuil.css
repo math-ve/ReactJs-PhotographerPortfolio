@@ -1,0 +1,101 @@
+.acceuil-main-container {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 150px;
+}
+
+.acceuil-name-container {
+    width: 100%;
+    height: 43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.acceuil-name {
+    width: 43%;
+    height: 56%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.438);
+    color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    overflow: visible;
+    position: relative;
+}
+
+.acceuil-tr-top {
+    position: absolute;
+    top: 0;
+    transform-origin: left;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.acceuil-tr-right {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+    transform-origin: top;
+}
+
+.acceuil-tr-bottom {
+    position: absolute;
+    bottom: 0;
+    transform-origin: right;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.acceuil-tr-left {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+    transform-origin: bottom;
+}
+
+.acceuil-name-container h1 {
+    font-weight: 300;
+    font-size: 2vw;
+}
+
+.acceuil-button-container {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.acceuil-button {
+    width: 175px;
+    height: 55px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acceuil-button p {
+    color: black;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 1vw;
+    font-weight: 400;
+}

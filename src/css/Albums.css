@@ -1,0 +1,152 @@
+.albums-main-container {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 75px);
+    margin-top: 75px;
+}
+
+.albums-container {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.657);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.albums-container h1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 300;
+    font-size: 1.25vw;
+    padding: 50px;
+}
+
+.albums {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.album-item {
+    width: 275px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.album-item h2 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 300;
+}
+
+.album-cover {
+    max-width: 100%;
+    max-height: 100%;
+    border: .5px solid black;
+}
+
+/*
+ALBUM VIEW
+*/
+
+.album-view-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    pointer-events: none;
+}
+
+.album-view-list-container {
+    width: 25%;
+    padding: 20px;
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    flex-direction: column;
+}
+
+.album-view-list-header-container {
+    width: 60%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.album-back-icon {
+    width: 15%;
+}
+
+.album-view-title {
+    font-family: 'Montserrat', 'sans-serif';
+    color: white;
+    font-weight: 300;
+}
+
+/*
+IMG LIST LEFT PART
+*/
+
+.album-view-img-list {
+    max-height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.album-view-img-list::-webkit-scrollbar {
+    display: none;
+  }
+
+.album-view-img-container {
+    width: 47.5%;
+    height: 175px;
+    background-color: black;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-view-img-item {
+    max-width: 98%;
+    max-height: 98%;
+}
+
+
+/*
+BIG IMG PREVIEW || RIGHT PART
+*/
+
+.album-view-full-container {
+    width: 75%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-current-full-view {
+    max-width: 98%;
+    max-height: 98%;
+}
