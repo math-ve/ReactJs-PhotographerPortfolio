@@ -22,9 +22,10 @@ const AlbumView = (props) => {
     })
 
     const handleFullView = (index) => {
-        gsap.to('.album-current-full-view',.5 ,{opacity:0, onComplete:() => {
-            setCurrentFullView(album.pictures[index]);
-        }})
+        if (album.pictures[index] !== currentFullView)
+            gsap.to('.album-current-full-view',.5 ,{opacity:0, onComplete:() => {
+                setCurrentFullView(album.pictures[index]);
+            }})
     }
     
     return (
