@@ -58,6 +58,7 @@ const AlbumView = (props) => {
                         <AlbumImgItem picture={picture} key={index} index={index} handleFullView={handleFullView} albumTitle={album.title}/>
                     ))}
                 </div>
+                <p className="phone-back-button" onClick={handleLeave}>retour</p>
             </div>
             <div className="album-view-full-container">
                 <p>Chargement...</p>
