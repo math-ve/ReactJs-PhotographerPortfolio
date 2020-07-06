@@ -40,7 +40,7 @@
 }
 
 .album-item {
-    width: 29%;
+    width: 21%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -302,5 +302,30 @@ PHONE DEVICES
         color: yellow;
         width: fit-content;
         margin: 0 auto;
+    }
+}
+
+
+/*
+BFD
+*/
+
+@media screen and (min-width:2500px) {
+    .album-view-list-container {
+        width: 35%;
+    }
+
+    .album-view-img-list {
+        justify-content: space-around;
+    }
+
+    .album-view-img-container {
+        height: 205px;
+        width: 35%;
+    }
+
+
+    .album-view-full-container {
+        width: 65%;
     }
 }

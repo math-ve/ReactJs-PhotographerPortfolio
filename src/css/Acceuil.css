@@ -140,3 +140,14 @@ PHONE DEVICES
         font-weight: 400;
     }    
 }
+
+/*
+BFD
+*/
+
+@media screen and (min-width:2500px) {
+
+    .acceuil-button p {
+        font-size: .8vw;
+    }    
+}
