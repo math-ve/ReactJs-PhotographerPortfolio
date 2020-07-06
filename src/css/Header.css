@@ -51,3 +51,24 @@
 .nav-item-active {
     border-bottom: 1px solid white;
 }
+
+
+/*
+PHONE DEVICES
+*/
+
+@media screen and (max-width:990px) {
+    .header-main-container {
+        height: 50px;
+    }
+
+
+    .header-nav-container {
+        width: 60%;
+    }
+
+
+    .nav-item {
+        font-size: 2.5vw;
+    }
+}

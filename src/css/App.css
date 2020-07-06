@@ -70,3 +70,15 @@ APP CONTAINER
   position: absolute;
   top: 0;
 }
+
+
+/*
+PHONE DEVICES
+*/
+
+@media screen and (max-width:990px) {
+
+  .app-tr-1 {
+    margin-top: 50px;
+  }
+}

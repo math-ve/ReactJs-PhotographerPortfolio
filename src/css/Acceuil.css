@@ -108,3 +108,35 @@
     font-size: 1vw;
     font-weight: 400;
 }
+
+
+/*
+PHONE DEVICES
+*/
+
+@media screen and (max-width:990px) {
+    .acceuil-main-container {
+        padding-top: 125px;
+    }
+
+
+    .acceuil-name {
+        width: 75%;
+        height: 40%;
+    }
+
+    .acceuil-name-container h1 {
+        font-size: 3.5vw;
+    }
+
+    .acceuil-button {
+        width: 125px;
+        height: 40px;
+    }
+
+
+    .acceuil-button p {
+        font-size: 3vw;
+        font-weight: 400;
+    }    
+}
