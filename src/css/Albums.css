@@ -265,8 +265,8 @@ PHONE DEVICES
     .album-view-list-container {
         width: 100%;
         order: 2;
-        height: 30%;
-        justify-content: center;
+        height: 28%;
+        justify-content: space-evenly;
         padding: 0 10px;
     }
     
@@ -288,7 +288,7 @@ PHONE DEVICES
 
     .album-view-full-container {
         width: 100%;
-        height: 70%;
+        height: 72%;
     }
     
     .album-view-full-container p {
@@ -300,7 +300,6 @@ PHONE DEVICES
         text-align: center;
         font-family: 'Montserrat', 'sans-serif';
         color: yellow;
-        padding-top: 5px;
         width: fit-content;
         margin: 0 auto;
     }
