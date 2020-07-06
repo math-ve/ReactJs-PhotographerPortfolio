@@ -48,7 +48,7 @@ const AlbumView = (props) => {
     
     return (
         <div className="album-view-container">
-            <div className="album-view-list-container">
+            <div className="album-view-list-container" id="albumVl">
                 <div className="album-view-list-header-container">
                     <img src="/assets/icon/back.png" alt="back-icon" className="album-back-icon" onClick={handleLeave}/>
                     <h1 className="album-view-title">{album.title}</h1>
